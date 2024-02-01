@@ -65,11 +65,11 @@ def heapSort(arr):
 
 
 heapSort(the_array)
-print(f"this is the copy: {the_array}")
-print(f"this is the actual array: {array}")
+#print(f"this is the copy: {the_array}")
+#print(f"this is the actual array: {array}")
 '''
 trials = 1
-repeats = 1
+repeats = 20
 total_time = timeit.repeat(stmt = my_code, setup = my_setup, number = trials, repeat = repeats)
 min_time = min(total_time)
 
