@@ -8,7 +8,7 @@ max_num = 9999
 arr_size = 700   
 
 array = np.array(random.sample([x for x in range(0,max_num)],arr_size))
-print(array)
+#print(array)
 
 
 print("--------")

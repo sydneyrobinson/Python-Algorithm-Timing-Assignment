@@ -54,6 +54,6 @@ trials = 1
 repeats = 20
 total_time = timeit.repeat(stmt = my_code, setup = my_setup, number = trials, repeat = repeats)
 min_time = min(total_time)
-
+bucketSort_min_time = min_time/trials
 #print(f"\nthis is bucket sort total time: {total_time}")
-print(f"\nthis is bucket sort min time: {min_time/trials}")
+print(f"\nthis is bucket sort min time: {bucketSort_min_time}")

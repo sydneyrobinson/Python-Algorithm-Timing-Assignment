@@ -72,6 +72,6 @@ trials = 1
 repeats = 20
 total_time = timeit.repeat(stmt = my_code, setup = my_setup, number = trials, repeat = repeats)
 min_time = min(total_time)
-
+heapSort_min_time = min_time/trials
 #print(f"\nthis is heap sort total time: {total_time}")
-print(f"\nthis is heap sort min time: {min_time/trials}")
+print(f"\nthis is heap sort min time: {heapSort_min_time}")
