@@ -1,13 +1,13 @@
 import timeit
+import numpy as np
+from numpy import average
 
 my_setup= '''
 import main 
 from main import array
+
 the_array = array.copy()
-
-
 n = len(the_array)
-
 
 '''
 #https://www.geeksforgeeks.org/python-check-if-list-is-sorted-or-not/
@@ -71,7 +71,18 @@ heapSort(the_array)
 trials = 1
 repeats = 20
 total_time = timeit.repeat(stmt = my_code, setup = my_setup, number = trials, repeat = repeats)
+avg_time = average(timeit.repeat(stmt = my_code, setup = my_setup, number = trials, repeat = repeats))
+
+#time variables
+max_time = max(total_time)
+heapSort_max_time = max_time/trials
+
+heapSort_avg_time = avg_time/trials
+
 min_time = min(total_time)
 heapSort_min_time = min_time/trials
+
 #print(f"\nthis is heap sort total time: {total_time}")
-print(f"\nthis is heap sort min time: {heapSort_min_time}")
+print(f"\n\nthis is heap sort min time: {heapSort_min_time}")
+print(f"\nthis is heap sort average time: {heapSort_avg_time}")
+print(f"\nthis is heap sort max time: {heapSort_max_time}")

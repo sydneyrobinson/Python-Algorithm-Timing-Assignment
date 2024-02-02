@@ -69,7 +69,16 @@ quicksort(the_array, 0, N - 1)
 trials = 1
 repeats = 20
 total_time = timeit.repeat(stmt = my_code, setup = my_setup, number = trials, repeat = repeats)
+
+#time variables
+max_time = max(total_time)
+quickSort_max_time = max_time/trials
+
+#quickSort_avg_time = total_time/trials
+
 min_time = min(total_time)
 quickSort_min_time = min_time/trials
 #print(f"\nthis is quick sort total time: {total_time}")
-print(f"\nthis is quick sort min time: {quickSort_min_time}")
+print(f"\n\nthis is quick sort min time: {quickSort_min_time}")
+#print(f"\nthis is heap sort average time: {quickSort_avg_time}")
+print(f"\nthis is heap sort max time: {quickSort_max_time}")
