@@ -70,8 +70,8 @@ heapSort(the_array)
 #print(f"this is the copy: {the_array}")
 #print(f"this is the actual array: {array}")
 '''
-trials = 1
-repeats = 20
+trials = 5
+repeats = 50
 total_time = timeit.repeat(stmt = my_code, setup = my_setup, number = trials, repeat = repeats)
 avg_time = average(timeit.repeat(stmt = my_code, setup = my_setup, number = trials, repeat = repeats))
 

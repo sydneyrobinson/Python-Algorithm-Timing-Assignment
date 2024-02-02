@@ -1,3 +1,4 @@
+
 import timeit
 import numpy as np
 from numpy import average
@@ -47,5 +48,5 @@ min_time = min(total_time)
 insertionSort_min_time = min_time/trials
 #print(f"\nthis is insertion sort total time: {total_time}")
 print(f"\n~~~\nthis is insertion sort min time: {insertionSort_min_time}")
-print(f"\nthis is heap sort average time: {insertionSort_avg_time}")
-print(f"\nthis is heap sort max time: {insertionSort_max_time}")
+print(f"\nthis is insertion sort average time: {insertionSort_avg_time}")
+print(f"\nthis is insertion sort max time: {insertionSort_max_time}")

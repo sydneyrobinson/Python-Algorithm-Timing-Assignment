@@ -26,9 +26,11 @@ times = [
      "Min Time": heapSort_min_time,
      "Avg Time": heapSort_avg_time, "Max Time": heapSort_max_time},
     #
+
     {"Array Size": arr_size, "Array Range": max_num, "Sorting Method": "Insertion Sort",
      "Min Time": insertionSort_min_time,
      "Avg Time": insertionSort_avg_time, "Max Time": insertionSort_max_time},
+
     #
     {"Array Size": arr_size, "Array Range": max_num, "Sorting Method": "Quick Sort",
      "Min Time": quickSort_min_time,

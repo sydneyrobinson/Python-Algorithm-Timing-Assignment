@@ -67,5 +67,5 @@ min_time = min(total_time)
 bucketSort_min_time = min_time/trials
 #print(f"\nthis is bucket sort total time: {total_time}")
 print(f"\n~~~\nthis is bucket sort min time: {bucketSort_min_time}")
-print(f"\nthis is heap sort average time: {bucketSort_avg_time}")
-print(f"\nthis is heap sort max time: {bucketSort_max_time}")
+print(f"\nthis is bucket sort average time: {bucketSort_avg_time}")
+print(f"\nthis is bucket sort max time: {bucketSort_max_time}")

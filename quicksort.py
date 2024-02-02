@@ -85,5 +85,5 @@ quickSort_min_time = min_time/trials
 
 #print(f"\nthis is quick sort total time: {total_time}")
 print(f"\n~~~\nthis is quick sort min time: {quickSort_min_time}")
-print(f"\nthis is heap sort average time: {quickSort_avg_time}")
-print(f"\nthis is heap sort max time: {quickSort_max_time}")
+print(f"\nthis is quick sort average time: {quickSort_avg_time}")
+print(f"\nthis is quick sort max time: {quickSort_max_time}")
