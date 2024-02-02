@@ -2,8 +2,8 @@ import timeit
 import numpy as np
 from numpy import average
 my_setup = '''
-import main 
-from main import array
+import Array
+from Array import array
 
 the_array = array.copy()
 
@@ -71,6 +71,8 @@ trials = 1
 repeats = 20
 total_time = timeit.repeat(stmt = my_code, setup = my_setup, number = trials, repeat = repeats)
 avg_time = average(timeit.repeat(stmt = my_code, setup = my_setup, number = trials, repeat = repeats))
+
+global  quickSort_max_time, quickSort_avg_time, quickSort_min_time
 
 #time variables
 max_time = max(total_time)
