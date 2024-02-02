@@ -7,11 +7,6 @@ import Array
 from Array import arr_size, max_num
 
 
-
-#heapSort_max_time = heapSort_avg_time = heapSort_min_time = insertionSort_max_time = insertionSort_avg_time = insertionSort_min_time = quickSort_max_time = quickSort_avg_time = quickSort_min_time = bucketSort_max_time = bucketSort_avg_time = bucketSort_min_time = 0
-
-
-
 import heapsort
 from heapsort import heapSort_max_time, heapSort_avg_time, heapSort_min_time
 import insertionsort
