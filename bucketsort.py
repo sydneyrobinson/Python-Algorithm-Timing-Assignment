@@ -1,5 +1,6 @@
 import timeit
-
+import numpy as np
+from numpy import average
 my_setup = '''
 import main 
 from main import array
@@ -53,7 +54,17 @@ bucketSort(the_array, No_Of_Buckets)
 trials = 1
 repeats = 20
 total_time = timeit.repeat(stmt = my_code, setup = my_setup, number = trials, repeat = repeats)
+avg_time = average(timeit.repeat(stmt = my_code, setup = my_setup, number = trials, repeat = repeats))
+
+#time variables
+max_time = max(total_time)
+bucketSort_max_time = max_time/trials
+
+bucketSort_avg_time = avg_time/trials
+
 min_time = min(total_time)
 bucketSort_min_time = min_time/trials
 #print(f"\nthis is bucket sort total time: {total_time}")
-print(f"\nthis is bucket sort min time: {bucketSort_min_time}")
+print(f"\n~~~\nthis is bucket sort min time: {bucketSort_min_time}")
+print(f"\nthis is heap sort average time: {bucketSort_avg_time}")
+print(f"\nthis is heap sort max time: {bucketSort_max_time}")

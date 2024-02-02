@@ -83,6 +83,6 @@ min_time = min(total_time)
 heapSort_min_time = min_time/trials
 
 #print(f"\nthis is heap sort total time: {total_time}")
-print(f"\n\nthis is heap sort min time: {heapSort_min_time}")
+print(f"\n~~~\nthis is heap sort min time: {heapSort_min_time}")
 print(f"\nthis is heap sort average time: {heapSort_avg_time}")
 print(f"\nthis is heap sort max time: {heapSort_max_time}")
